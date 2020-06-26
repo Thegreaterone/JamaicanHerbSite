@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JahmaiCure</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link rel="icon" sizes="192x192" href="favicon\herb.png">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 3px;
+    margin-top:40px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #0D231B;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .alert {
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+  </style>
+</head>
+
+
+<body>
+  <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Disclaimer!</strong> Some herb preparations are not accurate. Please note that we take no claim for any issues/sickness/conditions that occur from consumption/drink.
+  <b>Please hover over images to see preparation and information.</b>
+</div>
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="index.html">🌿JahmaiCure</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Team.htm">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="herbcatalog.htm">Herb Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.htm">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="credit.htm">Credit</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <section class="white-section" id="pricing">
+
+
+        <p>Simple and precise preparation</p>
+
+        <div class="row">
+
+
+
+          <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images\Ackee Leef 2.HEIC" alt="Ackee" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Ackee Leaf</h1>
+      <p>The arils are cleaned, washed and boiled for 5 min before use. Its leaves and bark are a good remedy for Stomach related problems. The herbal tea prepared from Ackee with salt is used as a mouthwash for treating Pyorrhea and various other Gum problems.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Aloe Vera.jpg" alt="Aloe Vera" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Aloe Vera</h1>
+<p>Boil the water, steep tea in cup. Cut edges from aloe leaf. Cut the leave in half, scrape out the clear jelly in the center, and stir into cup of tea. Serve</p>
+
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\arrowroot.jpg" alt="Arrowroot" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Arrowroot</h1>
+<p>An alternative tea can be made by ground arrowroot. First, the roots are torn into thin shreds. They are then dried for twenty days in shade, followed by ten days in a hot ondol room, after which they are ground to a starch powder. Tea is then made by mixing the starch powder with hot water.</p>
+
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\bissy.jpg" alt="Bissy" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Bissy</h1>
+<p>Boiled dried bissy in hot to touch water, for 5 minutes.</p>
+
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\blue_pea_flower.jpg" alt="Blue Pea" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Blue Pea Flower</h1>
+<p>Steep leaves for 5 minutes in hot water.</p>
+
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Cashew Tree bark.jpg" alt="Cashew Tree" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Cashew Tree Bark</h1>
+<p>Boil dried bark for 10 minutes and use to rinse mouth.</p>
+
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Collic Mint 2.HEIC" alt="Collic Mint" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Collic Mint</h1>
+<p> Boil fresh/dried leaf for 6 minutes.</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\comfrey leaves.jpg" alt="Comfrey Leaf" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Comfrey  Leaf</h1>
+<p> Boil fresh/dried leaf for 10 minutes.</p>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Cow Foot 2.HEIC" alt="Cow Foot" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Cow Foot</h1>
+<p> Boil fresh/dried leaf for 8 minutes.</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Dried cinnamon .jpg" alt="Cinnamon" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Cinnamon</h1>
+<p>The easiest way to make this beverage is to simply add 1 teaspoon (2.6 grams) of ground cinnamon to 1 cup (235 ml) of boiled water and stir. You can also make cinnamon tea by steeping a cinnamon stick in boiling water for 10–15 minutes.</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Dried Crease.jpg" alt="Dried Crease" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Dried Crease</h1>
+<p>Steep for 5 minutes and add sugar.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Dried manju bitters.jpg" alt="Dried Manju Bitter" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Dried Manju Bitters</h1>
+<p>Boil leafs for 8-10 minutes.</p>
+</div>
+</div>
+</div>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Dried neem.jpg" alt="Dried Neem" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Dried Neem</h1>
+<p>Steep for 5 minutes .</p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Dried rosemary.jpg" alt="Dried Rosemary" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Dried Rosemary</h1>
+<p>To make rosemary tea: Bring 10 ounces (295 ml) of water to a boil. Add 1 teaspoon of loose rosemary leaves to the hot water. Alternatively, place the leaves in a tea infuser and steep them for 5–10 minutes, depending on how flavorful you like your tea.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Fever Grass 2.HEIC" alt="Fever Grass" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Fever Grass</h1>
+<p>Using the back of your knife, beat the lemon grass a bit, then place it into a pot with the water and bring to a boil. Reduce to a simmer and let it go for about 15-20 minutes. You can now strain and sweeten as you like, but I much prefer to let it steep for a few minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Gross Stake 2.HEIC" alt="Gross Stake" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Gross Stake</h1>
+<p>simmer for 8 minutes.</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Guco Bush 2.HEIC" alt="Guco Bush" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Guco Bush</h1>
+<p>simmer for 15 minutes.</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Jack any Bush.HEIC" alt="Jack any Bush" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Jack any Bush</h1>
+<p>Boil for 10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Joseph Coat2.jpg" alt="Joseph Coat" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Joseph Coat</h1>
+<p>Boil for 5 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\medina.jpg" alt="Medina" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Medina</h1>
+<p>Boil for 10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\moringa.jpg" alt="Moringa" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Moringa</h1>
+<p>Simmer for 5 minutes.</p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Mountain_Sop.jpg" alt="Mountain_Sop" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Mountain Sop</h1>
+<p>Simmer for 5 - 10 minutes.</p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\naseberry tree bark.jpg" alt="Naseberry" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Naseberry Tree Bark</h1>
+<p>Simmer for 10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\naseberry tree leaf.jpg" alt="Naseberry" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Nasberry Leaf</h1>
+<p>Simmer for 10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Noni Fruit.jpg" alt="Noni Fruit" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Noni Fruit</h1>
+<p>Wash and eat the fruit.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Oilnut tree.jpg" alt="Oilnut tree" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Oilnut tree</h1>
+<p>The seed from the fruit can boiled and oil extract Castrol oil .</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\old man beard.jpg" alt="Old Man Beard" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Old Man Beard</h1>
+<p>Boil a teaspoon amount of usnea for 10 minutes</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Orange Peel.jpg" alt="Orange Peel" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Orange Peel</h1>
+<p>Boil for 8 -10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Red water Grass.jpg" alt="Red Water Grass" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Red water grass</h1>
+<p>Boil for 8 -10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\sarsaparilla.jpg" alt="Sarsaparilla" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Sarsaparilla</h1>
+<p>Boil for 8 -10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Shoe Black1.jpg" alt="Shoe Black" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Shoe Black/Hibiscus</h1>
+<p>Boil for 8 -10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Snake Wist 2.HEIC" alt="Snake Wist" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Snake Wist</h1>
+<p>Boil for 8 -10 minutes.</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Sour sop leaf.jpg" alt="Sour Sop" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Sour Sop</h1>
+<p>Blend white pulp with water and drink.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Spanish needle.jpg" alt="Spanish Needle" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Spanish Needle</h1>
+<p>Boil for 5 minutes</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Susumba 2.HEIC" alt="Susumba" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Susumba</h1>
+<p>Boil for 10 minutes</p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Vervine.jpg" alt="Vervine" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Vervine</h1>
+<p>Boil for 10 minutes</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Sour sop leaf.jpg" alt="Sour Sop" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Sour Sop</h1>
+<p>Blend white pulp with water and drink.</p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Allspice-pimento.jpg" alt="All Spice" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>All Spice/ Pimento</h1>
+<p>When dried, it can be used for porridge seasoning </p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\Annatto.jpg" alt="Annatto" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Annato </h1>
+<p>Annatto is an orange-red condiment derived from the seeds of the achiote tree. People take
+annatto for diabetes, diarrhea, fevers, fluid retention, heartburn, malaria, and hepatitis. They also
+use it as an antioxidant and bowel cleanser. Annatto is sometimes put directly on the affected
+area to treat burns and vaginal infections and to repel insects. </p>
+</div>
+</div>
+</div>
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\custard apple.jpg" alt="Custard Leaf" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Custer Leaf </h1>
+ <p>
+   Custard apple leaves also known by its scientific name (Annona reticulate). A tea made from
+the custard apple leaves are beneficial in the treatment of syphilis, fevers and also colic.Boil for 8 minutes.
+ </p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\guava-leaves.jpg" alt="Guava Leaf" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Guava Leaf </h1>
+ <p>
+   Guava leaves can be used as a herbal tea to which helps to :
+    Fights Cancer
+    Manages Diabetes
+    Lowers Cholesterol
+    Helps with Diarrhea
+    Heals Cold and Cough
+
+   Eat fruit.
+ </p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img  src="images\Papaya-Leaf-Tea.jpg" alt="Papaya Leaf" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Papaya Leaf </h1>
+ <p>
+   The papaya leaf is rich in enzymes like papain and chymopapain, which aid digestion, prevents
+   bloating and other digestive disorders.Eat fruit.
+ </p>
+</div>
+</div>
+</div>
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img  src="images\peppermint.jpg" alt="Peppermint" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Peppermint </h1>
+ <p>
+   Peppermint is a hybrid mint, a cross between watermint and spearmint. Peppermint calms the
+   stomach muscles and improves the flow of bile. This makes it suitable for people who have
+   indigestion.
+ </p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img  src="images\Ruellia_tuberosa (Duppy gun).jpg" alt="Duppy Gun" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Duppy Gun\Ruellia_tuberosa </h1>
+ <p>
+   Boil for 10 minutes.
+ </p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\search mi heart.jpg" alt="Search Mi Heart" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Search Mi Heart </h1>
+<p>Boil for 10 minutes. </p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\sorrel.jpg" alt="Sorrel" style="width:300px;height:300px;">
+</div>
+<div class="flip-card-back">
+<h1>Sorrel </h1>
+<p>Ingesting sorrel regularly helps to optimize the body’s immune system and prevent illness due to
+its high Vitamin C content. Sorrel also has significant levels of iron which helps improve
+circulation throughout the body by boosting red blood cell production and oxygen levels in vital
+organs. Sorrel also helps to lower elevated blood pressure, bad cholesterol and detoxifies the
+entire body.Boil for 10 minutes. </p>
+</div>
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="images\thyme.jpg" alt="Thyme" style="width:300px;height:300px;">
+</div> -->
+<div class="flip-card-back">
+<h1>Thyme </h1>
+<p>Thyme is an herb whose small leaves grows on clusters of thin stems. Thyme was a wide amount
+of benefits ranging from bronchitis, whooping cough, sore throat, colic, arthritis, upset stomach,
+stomach pain (gastritis), diarrhea, a movement disorder in children (dyspraxia), intestinal gas
+(flatulence), parasitic worm infections and skin disorders.Boil for 10 minutes. </p>
+</div>
+</div>
+</div>
+
+
+<div>
+
+<br />
+<br />
+<br />
+<a href="#title" style="margin-left:40px";>✔️To the top</a>
+</div>
+
+
+          </div>
+
+
+
+        </div>
+
+      </section>
+
+
+    </div>
+
+  </section>
+</body>
+
+</html
